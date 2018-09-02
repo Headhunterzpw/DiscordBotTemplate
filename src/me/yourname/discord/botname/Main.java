@@ -40,8 +40,6 @@ public class Main {
             e.printStackTrace();
         } catch (InterruptedException e) {
             e.printStackTrace();
-        } catch (RateLimitedException e) {
-            e.printStackTrace();
         }
     }
 
