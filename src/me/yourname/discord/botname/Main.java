@@ -35,10 +35,8 @@ public class Main {
         addListeners();
         addCommands();
         try {
-            builder.buildBlocking();
+            builder.build();
         } catch (LoginException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
