@@ -8,7 +8,7 @@ import net.dv8tion.jda.core.events.message.priv.PrivateMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
 public class commandListener extends ListenerAdapter {
-    public void onMessageReceived(MessageReceivedEvent event) {
+       public void onMessageReceived(MessageReceivedEvent event) {
 
 
         if (event.getAuthor().isBot()) return;
@@ -27,7 +27,7 @@ public class commandListener extends ListenerAdapter {
 
     public void onPrivateMessageReceived(PrivateMessageReceivedEvent event) {
         if (event.getAuthor().isBot()) return;
-        System.out.println("{PRIVATE} " + event.getAuthor().getName().toString() + " : " + event.getMessage().getContent().toString());
+        System.out.println("{PRIVATE} " + event.getAuthor().getName() + " : " + event.getMessage().getContentDisplay());
         //You can do something like sending an message that this bot won't work in private chats etc..
     }
 }
