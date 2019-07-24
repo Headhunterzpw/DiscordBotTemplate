@@ -2,9 +2,6 @@ package me.yourname.discord.botname.command;
 
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class Ping implements Command {
     @Override
     public boolean called(String[] args, MessageReceivedEvent event) {
